@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+coffee -w -o js coffee/*

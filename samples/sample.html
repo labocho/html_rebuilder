@@ -1,0 +1,11 @@
+<script src="../js/html_rebuilder.js"></script>
+<!-- Comment -->
+<div class="foo" id="bar">
+  &lt;a&gt;
+  <p>text</p>
+  <p><h2>heading</h2></p>
+</div>
+<script>
+  var b = new HtmlRebuilder(document);
+  prompt("Rebuiled HTML", b.html());
+</script>

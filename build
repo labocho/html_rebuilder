@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+coffee -o js coffee/*
+for file in `find js -type f -not -name *.min.js`
+do
+  out=`echo $file | sed -e "s/\.js/\.min.js/"`
+  jsmin $file > $out
+done
